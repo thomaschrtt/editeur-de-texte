@@ -21,16 +21,16 @@ public class Document {
     }
 
     public void remplacer(int start, int end, String remplacement) {
-        String leftPart = texte.substring(0, start);
-        String rightPart = texte.substring(end);
-        texte = leftPart + remplacement + rightPart;
+        String debut = texte.substring(0, start);
+        String fin = texte.substring(end);
+        setTexte(debut + remplacement + fin);
     }
 
     public void majuscules(int start, int end) {
         String debut = texte.substring(0, start);
         String fin = texte.substring(end);
         String maj = texte.substring(start, end).toUpperCase();
-        texte = debut + maj + fin;
+        setTexte(debut + maj + fin);
     }
 
     @Override
