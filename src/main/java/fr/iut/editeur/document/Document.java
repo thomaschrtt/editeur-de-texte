@@ -41,6 +41,6 @@ public class Document {
     }
 
     public void clear() {
-        setTexte("");
+        setTexte("s");
     }
 }
