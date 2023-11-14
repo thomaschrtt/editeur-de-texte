@@ -24,6 +24,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./target/site/apidocs
           publish_branch: gh-pages
-          user_name: "GitHub Actions"
-          user_email: "
     permissions: write-all
