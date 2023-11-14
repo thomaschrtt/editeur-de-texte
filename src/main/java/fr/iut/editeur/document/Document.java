@@ -23,7 +23,7 @@ public class Document {
     public void remplacer(int start, int end, String remplacement) {
         String debut = texte.substring(0, start);
         String fin = texte.substring(end);
-        setTexte(debut + remplacement + "dnsqd" + fin);
+        setTexte(debut + remplacement + fin);
     }
 
     /**
