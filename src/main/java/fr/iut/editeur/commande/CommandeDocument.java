@@ -13,6 +13,9 @@ public abstract class CommandeDocument implements Commande {
         this.parameters = parameters;
     }
 
+    /**
+     * Affiche le document
+     */
     @Override
     public void executer() {
         System.out.println(this.document);

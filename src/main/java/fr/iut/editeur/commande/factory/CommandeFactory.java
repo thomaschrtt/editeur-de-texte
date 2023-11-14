@@ -16,6 +16,14 @@ public class CommandeFactory {
 
     private CommandeFactory() {}
 
+    /**
+     * Crée une commande en fonction de son nom
+     * c'est a dire que si le nom est "ajouter" alors on crée une CommandeAjouter
+     * @param name nom de la commande
+     * @param document document sur lequel la commande va s'appliquer
+     * @param parameters paramètres de la commande
+     * @return la commande créée
+     */
     public Commande createCommand(String name, Document document, String[] parameters) {
         switch (name) {
             case "ajouter" : return new CommandeAjouter(document, parameters);

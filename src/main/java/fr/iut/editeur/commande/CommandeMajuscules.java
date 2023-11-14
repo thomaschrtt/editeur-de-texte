@@ -8,6 +8,9 @@ public class CommandeMajuscules extends CommandeDocument {
         super(document, parameters);
     }
 
+    /**
+     * Met en majuscules le texte entre start et end
+     */
     @Override
     public void executer() {
         if(parameters.length < 3) {
